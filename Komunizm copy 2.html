@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Komunistycnza Partia ZSOiZ</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @font-face {
+  font-family: Nikkyou Sans;
+  src: url(/Users/tymoteuszbrzumowski/Downloads/nikkyou-sans-font/NikkyouSans-mLKax.ttf);
+}
+body{
+  background-color: red;
+  margin: 0px;}
+.Komunizm{
+
+font-size: 100px;
+text-align: center;
+color: yellow;
+font-family: Nikkyou Sans;
+}
+.partia{
+color: red;
+background-color: yellow;
+border: none;
+width: 300px;
+height: 45px;
+border-radius: 30px;
+font-size: 20px;
+cursor: pointer;
+transition: opacity 0.3s;
+
+}
+.partia:hover{
+opacity: 0.7;
+}
+
+.pudlo_Komunizm{
+  
+display: flex;
+grid-template-columns: 100px 600px 100px;
+justify-content: center;
+
+
+}
+
+.przycisk{
+display: flex;
+align-items: center; 
+justify-content: center;
+height: 80px;
+}
+
+.gora{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: yellow;
+  
+}
+.test{
+ 
+  background-color: yellow;
+  flex: 1;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-right-style: solid;
+  border-color: red;
+  color: red;
+  text-align: center;
+  font-family: Nikkyou Sans;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+.test:hover{
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.przerwa1{
+  border-right-width: 2px;
+  border-color: red;
+  border-right-style: solid;
+  flex: 0.5;
+}
+.przerwa2{
+  
+  flex: 0.5;
+}
+
+
+</style>
+
+  </head>
+  <body>
+<div class="gora">
+  <div class="przerwa1"></div>
+  <div onclick="toggleElement('glowna')"class="test"> <a>strona główna</a></div>
+  <div onclick="toggleElement('onas')"class="test"><a style="padding: 15px; padding-left: 20px; padding-right: 20px;">o nas</a></div>
+  <div onclick="toggleElement('komunizm')"class="test"><a>komunizm dziś</a></div>
+  <div onclick="toggleElement('propaganda')"class="test"><a>galeria propagandy</a></div>
+  <div onclick="toggleElement('wielcy')"class="test"><a>wielcy komuniści</a></div>
+  <div class="przerwa2"></div>
+</div>
+
+    <div id="glowna" class="pudlo_Komunizm zmieniajace">
+      <div style="flex: 1;"></div>
+     <div style="border-bottom: 8px solid yellow; flex: 3;">
+       <p class="Komunizm">Komunizm.</p>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <div  id="glowna" class="przycisk zmieniajace">
+      <button onclick="window.open('//discord.gg/8p5Trvfu', '_blank')" class="partia">
+        Dołącz do partii
+      </button>
+    </div>
+    <div id="onas" style="position: relative; top: 10%; left: 50%; transform: translate(-50%, -123.5%); width: 800px; visibility: hidden; " class="pudlo_Komunizm zmieniajace">
+      <div style="flex: 1;"></div>
+     <div style="border-bottom: 8px solid yellow; flex: 3;">
+       <p class="Komunizm">o nas.</p>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <div id="onas" class="zmieniajace" style="visibility: hidden; display: flex; position: relative; top: 100%; left: 50%; transform: translate(-50%, -1200%);">
+      <div style="flex: 1;"></div>
+      <div class="onas-tekst" style="color: yellow; flex: 3; display: flex; justify-content: center; align-items: center;">
+        <a>ble ble ble1</a>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    
+    <div id="komunizm" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -166.5%); width: 800px; visibility: hidden; " class="pudlo_Komunizm zmieniajace">
+      <div style="flex: 1;"></div>
+     <div style="border-bottom: 8px solid yellow; flex: 3;">
+       <p class="Komunizm">komunizm dziś.</p>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <div id="komunizm" class="zmieniajace" style="visibility: hidden; display: flex; position: relative; top: 120%; left: 50%; transform: translate(-50%, -3250%);">
+      <div style="flex: 1;"></div>
+      <div class="onas-tekst" style="color: yellow; flex: 3; display: flex; justify-content: center; align-items: center;">
+        <a>ble ble ble2</a>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div id="propaganda" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -373%); width: 800px; visibility: hidden; " class="pudlo_Komunizm zmieniajace">
+      <div style="flex: 1;"></div>
+     <div style="border-bottom: 8px solid yellow; flex: 3;">
+       <p class="Komunizm">propaganda.</p>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <div id="propaganda" class="zmieniajace"style=" visibility: hidden; height: 200px; width: 150px; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-220%, 30%);"><img style="max-width: 100%;" src="propaganda.avif"></div>
+    <div id="propaganda" class="zmieniajace" style="visibility: hidden; display: flex; position: relative; top: 120%; left: 50%; transform: translate(-50%, -6200%);">
+      <div style="flex: 1;overflow: hidden;"></div>
+      <div class="onas-tekst" style="color: yellow; flex: 3; display: flex; justify-content: center; align-items: center;">
+        <a>opis przykładowego zdjęcia - ble ble ble 3</a>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+
+    <div id="wielcy" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -347%); width: 800px; visibility: hidden; " class="pudlo_Komunizm zmieniajace">
+      <div style="flex: 1;"></div>
+     <div style="border-bottom: 8px solid yellow; flex: 3;">
+       <p class="Komunizm">wielcy komuniści.</p>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <div id="wielcy" class="zmieniajace" style="visibility: hidden; display: flex; position: relative; top: 120%; left: 50%; transform: translate(-50%, -7750%);">
+      <div style="flex: 1;overflow: hidden;"></div>
+      <div class="onas-tekst" style="color: yellow; flex: 3; display: flex; justify-content: center; align-items: center;">
+        <a>ble ble ble 4</a>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+    <script>
+      function toggleElement(elementId) {
+      
+      var elements = document.getElementsByClassName('zmieniajace');
+      for (var i =0; i < elements.length; i++){
+        var element = elements[i];
+        if (element.id === elementId || element.id === 'gui'){
+          element.style.visibility = 'visible';
+        } else {
+          element.style.visibility = 'hidden';
+        }
+
+      }
+    }
+    </script>
+  </body>
+ 
+</html>
